@@ -29,7 +29,7 @@ Given("the student visit istqb test page", () => {
     //2. Por texto, lo segundo mas recomendado
     cy.contains("Welcome").click();
     //hacer click el titulo h2 con la palabra welcome
-    cy.get('h2').contains("WELCOME").click();
+    cy.get('h2').contains("Welcome").click();
 
     //3. Algo menos recomendada pero bien, por id
     cy.get('#menu-welcome-id').click();
