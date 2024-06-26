@@ -12,3 +12,9 @@ Given the student is on the ISTQB exam page
 When the student enters the name "MaríaDelMar"
 And press start button
 Then the student should see the message "Welcome MaríaDelMa"
+
+Scenario: The name cannot be empty
+Given the student is on the ISTQB exam page
+When the student enters the name "--"
+And press start button
+Then the student should see the message "The Name field is required"
