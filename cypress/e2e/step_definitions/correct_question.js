@@ -18,12 +18,12 @@ import {
 
   When("the user press correct button on question {string}", (questionnumber) => {
 
-    cy.get('[data-cy="button-correct-question'+questionnumber+'"]').click();
+    cy.get('[data-cy="correction-answer'+questionnumber+'"]').click();
 
   }); 
 
   Then("the user should see the message {string} on question {string}", (expectedMessage,questionnumber) => {
 
-    cy.get('[data-cy="messagequestion'+questionnumber+'"]').should('have.text',expectedMessage);
+    cy.get('[data-cy="messagepunctuation'+questionnumber+'"]').should('have.text',expectedMessage);
 
   }); 
