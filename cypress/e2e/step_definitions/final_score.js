@@ -16,6 +16,6 @@ import {
     cy.get('[data-cy="buttonfinalscore"]').click();
   }); 
 
-  Then("he should see a message with the score 3 {string}", (welcomeMessage) => {
-    cy.get('[data-cy="welcome-message"]').should('have.text', welcomeMessage);
+  Then("the student should see the final message {string}", (messageFinalScore) => {
+    cy.get('[data-cy="finalscore"]').should('have.text', messageFinalScore);
   }); 
