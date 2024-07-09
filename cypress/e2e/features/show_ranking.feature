@@ -35,10 +35,16 @@ When the three students will complete the exam:
 | Manuel    | 8                | C              |
 | Manuel    | 9                | B              |
 | Manuel    | 10               | B              |
+And the students presses see final score button
+And the students presses see ranking button
 
-And the student presses the show ranking button
-Then the student should see a message with the list of the rest of the students and their scores be sorted from highest to lowest "1. Mario: 20, 2. Rocio: 0, 3. Manu: -10"
+Then a list should appear with all the students who have taken the exam
+And their scores ordered from highest to lowest score
+And the ranking should show:
 
-
+    | student      | score |
+    | Mario        |  20   |
+    | Rocio        | -10   |
+    | Manuel       |  0    |
    
 
