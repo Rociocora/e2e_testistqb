@@ -5,7 +5,6 @@ Given the student is on the ISTQB exam page
 When press shouw answer button <questionNumber>
 Then he should see the correct answer <correctAnswer> on question <questionNumber>
 
-
 Examples:
    | questionNumber   | correctAnswer              |
    | "1"              | "The correct answer is C"  |

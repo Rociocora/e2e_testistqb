@@ -15,6 +15,7 @@ When the student select 4 correct answer, 5 incorrect answer and 1 empty answer:
    | 8                | B              |
    | 9                | A              |
    | 10               | C              |
+   
 And press the finish test button
 Then the student should see the final message "Your Total Score Is: 3"
 
