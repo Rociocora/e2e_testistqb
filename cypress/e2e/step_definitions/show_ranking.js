@@ -32,7 +32,7 @@ When('the students presses see ranking button', () => {
 })
 
 Then("a list should appear with all the students who have taken the exam", () => {
-      cy.get('[data-cy="ranking-result-message"]').should('be.visible');
+      cy.get('[data-cy="showRanking"]').should('be.visible');
 });
   
 Then("their scores ordered from highest to lowest score", () => {
@@ -40,8 +40,8 @@ Then("their scores ordered from highest to lowest score", () => {
   
 Then("the ranking should show:", () => {
     cy.get('[data-cy="showRanking"]').should('contain', '20');
-    cy.get('[data-cy="showRanking"]').should('contain', '-10');
     cy.get('[data-cy="showRanking"]').should('contain', '0');
+    cy.get('[data-cy="showRanking"]').should('contain', '-10');
 });
 
 

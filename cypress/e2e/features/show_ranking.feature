@@ -42,9 +42,9 @@ Then a list should appear with all the students who have taken the exam
 And their scores ordered from highest to lowest score
 And the ranking should show:
 
-    | student      | score |
-    | Mario        |  20   |
-    | Rocio        | -10   |
-    | Manuel       |  0    |
+    | student      |score |
+    | Mario        | 20   |
+    | Rocio        |-10   |
+    | Manuel       | 0    |
    
 
