@@ -19,11 +19,16 @@ When("the student enters the name {string}", (name) => {
 When("press start button", () => {
   //hacer click en el boton comenzar
   cy.get('[data-cy="button-start"]').click();
-  }); 
+ }); 
 
 Then("the student should see the message {string}", (welcomeMessage) => {
   cy.get('[data-cy="welcome-message"]').should('have.text', welcomeMessage);
   }); 
+
+When("the student does not enter any name", () => {
+    // Borrar el contenido del campo de entrada para asegurarse de que esté vacío
+  cy.get('[data-cy="input-welcome-name"]').clear();
+});
 
 
 

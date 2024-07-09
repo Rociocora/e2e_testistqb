@@ -4,17 +4,6 @@ import {
     Then,
   } from "@badeball/cypress-cucumber-preprocessor";
 
-
- /* When('the three students will complete the exam:', (dataTable) => {
-    const students = dataTable.hashes();
-    students.forEach(({ student, questionNumber, selectedAnswer }) => {
-        if (selectedAnswer) {
-            cy.get(`[data-cy="question${questionNumber}"]`).select(selectedAnswer);
-        }
-    });
-    cy.get('[data-cy="buttonfinalscore"]').click(); // Calculate the final score
-});*/
-
 When("the three students will complete the exam:", (datatable) => {
 
     datatable.hashes().forEach(element => {
